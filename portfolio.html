@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenya's Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA-BRANDS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <p>Wen Ya<span class="logo-cursor">&nbsp;</span></p>
+          </a>
+        </div>
+        <div class="hamburger" id="hamburger" data-visible="true">
+          <a href="#" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <nav>
+          <ul class="menu" id="menu" data-visible="false">
+            <li>
+              <a href="portfolio.html" class="underline">Portfolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="portfolio">
+            <div class="portfolio-container">
+                <!-- list button -->
+                <div class="portfolio-header">
+                    <div>
+                        <h2>Works.</h2>
+                        <p>Click into any work to read more about them.</p>
+                    </div>
+                    <div class="portfolio-btns"></div>
+                    <button type="button" class="portfolio-btn active-btn" id="all">
+                        All
+                    </button>
+                    <button type="button" class="portfolio-btn active-btn" id="all">
+                        Tutorial
+                    </button>
+                    <button type="button" class="portfolio-btn active-btn" id="all">
+                        Assignment
+                    </button>
+                </div>
+
+                <!-- works -->
+                <div class="portdolio-items">
+                    <!-- Week 3 -->
+                    <div class="col portfolio-item all tutorial">
+                        <div class="work-container">
+                            <div class="image">
+                                <a href="html/week03.html" target="_blank">
+                                    <img src="week03.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <h3>Week 03 tutior</h3>
+                        <p>HTML, CSS</p>
+                        <a href="html/week03.html" class="btn">VIEW WORK</a>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div class="col portfolio-item all tutorial">
+                        <div class="work-container">
+                            <div class="image">
+                                <a href="html/week04.html" target="_blank">
+                                    <img src="week04.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <h3>Week 04 tutior</h3>
+                        <p>HTML, CSS</p>
+                        <a href="html/week04.html" class="btn">VIEW WORK</a>
+                    </div>
+
+                    <!-- Week 6 -->
+                    <div class="col portfolio-item all tutorial">
+                        <div class="work-container">
+                            <div class="image">
+                                <a href="html/week06.html" target="_blank">
+                                    <img src="week06.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <h3>Week 04 tutior</h3>
+                        <p>HTML, CSS</p>
+                        <a href="html/week06.html" class="btn">VIEW WORK</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+      </main>
+    
+      <footer>
+        <div class="footer-text">
+          <p>© Copyright 2024 XUE WEN YA</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/xuewenya/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/wenya0326/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://chatwith.io/s/wen-ya"><i class="fa-brands fa-whatsapp"></i></i></a>
+          <a href="mailto:wenyaxue0326@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </footer>
+</body>
+</html>
