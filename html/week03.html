@@ -3,64 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Week 03 Learning</title>
+    <title>Week03</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA-BRANDS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 </head>
 <body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="week03.html">Week 3</a></li>
-          <li><a href="week04.html">Week 4</a></li>
-        </ul>
-      </nav>
-
-
-    <form action="#" method="post">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" type="email" required>
-
-        <label for="birthdate">Birthdate:</label>
-        <input type="date" id="birthdate" name="birthdate" required>
-
-        <label>Preferred Time:</label>
-        <input type="time" id="preferredTime" name="preferredTime" required>
-
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" checked>
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label>
-
-        <label>Interests:</label>
-        <input type="checkbox" id="interest1" name="interest1" value="sports">
-        <label for="interest1">Sports</label>
-        <input type="checkbox" id="interest2" name="interest2" value="music">
-        <label for="interest2">Music</label>
-        <input type="checkbox" id="interest3" name="interest3" value="travel">
-        <label for="interest3">Travel</label>
-        <input type="checkbox" id="interest4" name="interest4" value="reading">
-        <label for="interest4">Reading</label>
-
-        <label for="message">Additional Comments:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-
-        <input type="submit" value="Submit">
-    </form>
-    <footer>
-        <div>
-          <p>&copy; 2023 My Portfolio</p>
+    <header>
+        <div class="logo">
+          <a href="../index.html">
+            <p>Wen Ya<span class="logo-cursor">&nbsp;</span></p>
+          </a>
         </div>
-        
-        <div>
-          <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Facebook</a></p>
+        <div class="hamburger" id="hamburger" data-visible="true">
+          <a href="#" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
         </div>
-        
+        <nav>
+          <ul class="menu" id="menu" data-visible="false">
+            <li>
+              <a href="../portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="works">
+          <h2>Week 03</h2>
+          <p>Forms Advanced CSS Layouts</p>
+        </div>
+  
+        <section class="work-container">
+          <div class="work-row">
+            <div class="img-col">
+              <h3>- Create a form</h3>
+              <img src="../image/week03/image1.png" alt="image" />
+              <h3>- Using Zindex</h3>
+              <img src="../image/week03/image2.png" alt="image" />
+              <h3>- Flex the boxes</h3>
+              <img src="../image/week03/image3.png" alt="image" />
+            </div>
+            <div class="text-col">
+              <h3>Forms Advanced CSS Layouts</h3>
+              <p class="change-color">Tutorial</p>
+              <p>In the Week 03 lesson, I learn how to make a simple form and the type of attribute for the input.</p>
+              <p>I also learn about the z-index property is to specifies the stack order of an element in CSS.</p>
+              <p>I also learn about the position property, understand different type of positioning method used for an element. such as static, relative, flexed, absolute and sticky. </p>
+              <h4>What I used</h4>
+              <p>- HTML</br>- CSS</br>- replit</p>
+            </div>
+          </div>
+        </section>
+  
+  
+      </main>
+      <footer>
+        <div class="footer-text">
+          <p>© Copyright 2024 XUE WEN YA</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/xuewenya/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/wenya0326/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://chatwith.io/s/wen-ya"><i class="fa-brands fa-whatsapp"></i></i></a>
+          <a href="mailto:s10262410@connect.np.edu.sg"><i class="fa-regular fa-envelope"></i></a>
+        </div>
       </footer>
+      <script src="../js/script.js"></script>
+    
 </body>
 </html>
