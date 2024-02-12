@@ -1,31 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-      
-<body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="week03.html">Week 3</a></li>
-        <li><a href="week04.html">Week 4</a></li>
-        <li><a href="week06.html">Week 6</a></li>
-      </ul>
-    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week06</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <footer>
-        <div>
-            <p>&copy; 2023 My Portfolio</p>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA-BRANDS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="../index.html">
+            <p>Wen Ya<span class="logo-cursor">&nbsp;</span></p>
+          </a>
         </div>
-          
-        <div>
-            <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Facebook</a></p>
+        <div class="hamburger" id="hamburger" data-visible="true">
+          <a href="#" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
         </div>
-            
-    </footer>
+        <nav>
+          <ul class="menu" id="menu" data-visible="false">
+            <li>
+              <a href="../portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="works">
+          <h2>Week 05 & 06</h2>
+          <p>Javascript Basics</p>
+        </div>
+  
+        <section class="work-container">
+          <div class="work-row">
+            <div class="img-col">
+              <h3>- Using IF-ELSE statements</h3>
+              <img src="../image/week06/image1.png" alt="image" />
+              <h3>- Using Loops and Array</h3>
+              <img src="../image/week06/image2.png" alt="image" />
+              <h3>- Using Literal Object</h3>
+              <img src="../image/week06/image3.png" alt="image" />
+              <h3>- Using Function Objects</h3>
+              <img src="../image/week06/image4.png" alt="image" />
+            </div>
+            <div class="text-col">
+              <h3>JavaScript Basics</h3>
+              <p class="change-color">Tutorial</p>
+              <p>In the Week 06 lesson, I learn about the JavaScript is the programming language for the web. It can update and change both HTML and CSS, and also can calcualte, manipulate and validate data.</p>
+              <p>In this lesson, I learn about the variable declaration and hoisting. And also know how to interact with web pages using EventListener and functions.</p>
+              <h4>What I used</h4>
+              <p>- HTML</br>- CSS</br>- JavaScript</br>- replit</br>- Visual Studio Code</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-text">
+          <p>© Copyright 2024 XUE WEN YA</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/xuewenya/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/wenya0326/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://chatwith.io/s/wen-ya"><i class="fa-brands fa-whatsapp"></i></i></a>
+          <a href="mailto:s10262410@connect.np.edu.sg"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </footer>
+      <script src="../js/script.js"></script>
     
-    <script src="script.js"></script>
-    </body>
+</body>
 </html>
