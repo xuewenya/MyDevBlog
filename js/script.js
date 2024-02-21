@@ -92,3 +92,49 @@ function showMenu(newMenuBtn) {
     }
   });
 }
+
+/* contact form */
+document.addEventListener("DOMContentLoaded", function () {
+  const APIKEY = "65c221a140097ad343c8b65f";
+  document.getElementById("contact-submit").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    let contactName = document.getElementById("contact-name").value;
+    let contactEmail = document.getElementById("contact-email").value;
+    let contactSubject = document.getElementById("contact-subject").value;
+    let contactMessage = document.getElementById("contact-msg").value;
+
+    let jsondata = {
+      "name": contactName,
+      "email": contactEmail,
+      "subject": contactSubject,
+      "message": contactMessage
+    };
+
+    let settings = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-apikey": APIKEY,
+        "Cache-Control": "no-cache"
+      },
+      body: JSON.stringify(jsondata),
+      beforeSend: function () {
+        document.getElementById("contact-submit").disabled = true;
+        document.getElementById("add-contact-form").reset();
+      }
+    }
+
+    fetch("https://greenrecycling-1c59.restdb.io/rest/contact", settings)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        document.getElementById("contact-submit").disabled = false;
+        document.getElementById("add-update-contact").style.display = "block";
+        setTimeout(function () {
+          document.getElementById("add-update-contact").style.display = "none";
+          document.getElementById("add-contact-form").reset();
+        }, 3000);
+      });
+  });
+});

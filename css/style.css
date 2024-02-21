@@ -133,7 +133,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 40px 0;
+  padding: 0 30px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   text-align: left;
@@ -195,7 +196,6 @@ header a {
 
 /* filter menu */
 .portfolio-container,
-header,
 main,
 footer {
   padding: 0 30px;
@@ -369,17 +369,69 @@ footer p {
   border: 1px solid red;
 }
 
-/* tablet */
+/* contact */
+#add-update-contact {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: #d4edda;
+  text-align: center;
+  color: #e99174;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* contact form */
+.contact-table {
+  margin: 30px 0;
+}
+.contact-form {
+  color: #1c213b;
+  border-radius: 25px;
+  box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+  padding: 40px 20px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+font-weight: 500;
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  width: 100%;
+  background-color: #e99174;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #1c213b;
+}
+
+/* tablet view*/
 @media screen and (min-width: 688px) {
-
-
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
   }
-
-
 
   .hamburger,
   .close {
@@ -417,7 +469,7 @@ footer p {
   }
 
   .img-col {
-    width: 65%;
+    width: 35%;
     padding-right: 20px;
   }
 
@@ -458,6 +510,19 @@ footer p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+  }
+
+  .portfolio-items img {
+    height: 200px;
+  }
+
+  /* contact */
+  .contact-table {
+    padding: 80px;
+  }
+  .contact-form {
+      padding-left: 40px;
+      padding-right: 40px;
   }
 
 }
